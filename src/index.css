@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #e7e7e7;
+}
+body::-webkit-scrollbar {
+  background-color: hsla(0, 0%, 67%, 0.56);
+  height: 4px;
+  width: 3px;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.289);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a {
+  text-decoration: none;
+}
+a,
+p,
+h1,
+h2,
+h3,
+span,
+input,
+img,
+select,
+div,
+button,
+svg {
+  -webkit-tap-highlight-color: transparent;
+}

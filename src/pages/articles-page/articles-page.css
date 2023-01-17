@@ -1,0 +1,25 @@
+.articles_page {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.articles_page_title h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.articles_error {
+  height: 55vh;
+}
+
+.articles_error p {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1420px) {
+  .articles_page {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

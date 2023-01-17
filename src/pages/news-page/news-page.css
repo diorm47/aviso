@@ -1,0 +1,25 @@
+.news_page {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.news_page_title h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.news_error {
+  height: 55vh;
+}
+
+.news_error p {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1420px) {
+  .news_page {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

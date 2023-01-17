@@ -1,0 +1,50 @@
+.top_page {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.top_page_title h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.top_error {
+  height: 45vh;
+}
+
+.top_error p {
+  text-align: center;
+}
+
+.top_page_text p {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.top_content svg {
+  width: 25px;
+  padding: 4px 0;
+}
+
+@media only screen and (max-width: 1420px) {
+  .top_page {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .top_page {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .top_page_title h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .top_page_text p {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}

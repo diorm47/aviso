@@ -1,0 +1,70 @@
+.competiton_page {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.competiton_page_title h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.competiton_error {
+  height: 55vh;
+}
+
+.competiton_error p {
+  text-align: center;
+}
+
+.competiton_content {
+  width: 100%;
+  margin-bottom: 343px;
+}
+
+.react-tabs__tab-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-tabs__tab--selected {
+  background: transparent !important;
+  border-color: transparent !important;
+  color: black;
+  border-radius: none !important;
+  border-bottom: #157a93 !important;
+}
+.react-tabs__tab {
+  display: inline-block;
+  border-bottom: none;
+  bottom: 0px !important;
+  position: relative;
+  list-style: none;
+  padding: 9px 30px !important;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1420px) {
+  .competiton_page {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .competiton_page_title h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 23px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .competiton_content li {
+  font-size: 12px !important;
+  }
+  .competiton_content p {
+  font-size: 10px;
+    }
+}

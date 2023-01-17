@@ -1,0 +1,19 @@
+.data_table {
+  margin-top: 60px;
+}
+.data_table div {
+  background: transparent;
+  color: #000;
+  text-align: center;
+}
+.rdg-cell {
+  border-left: none !important;
+  border-right: none !important;
+  border-top: rgb(80, 80, 80);
+  border-bottom: rgb(90, 89, 89);
+}
+
+.rdg-header-row .rdg-cell {
+  background: #157a93 !important;
+  color: #fff;
+}
