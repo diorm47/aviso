@@ -1,17 +1,33 @@
 import React from "react";
 import "./agreement-page.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function AgreementPage() {
   React.useEffect(() => {
     document.title = `Услуги проекта, порядок оплаты и доставки`;
   }, []);
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <div className="agreement_page">
-      <div className="agreement_title">
+      <div
+        className="agreement_title"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <h1>Услуги проекта, порядок оплаты и доставки</h1>
       </div>
 
-      <div className="agreement_content">
+      <div
+        className="agreement_content"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <h3>Предоставляемые услуги</h3>
         <p>
           '----' — сервис, предоставляющий качественные рекламные услуги, а так

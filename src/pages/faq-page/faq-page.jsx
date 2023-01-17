@@ -8,18 +8,30 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 import "react-accessible-accordion/dist/fancy-example.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function FaqPage() {
   React.useEffect(() => {
     document.title = `Помощь`;
   }, []);
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <div className="faq_page">
-      <div className="faq_page_title">
+      <div
+        className="faq_page_title"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <h1>Помощь</h1>
       </div>
 
-      <div className="faq_content">
+      <div className="faq_content" data-aos="fade-up" data-aos-duration="1000">
         <Accordion allowMultipleExpanded={true} allowZeroExpanded={true}>
           <AccordionItem>
             <AccordionItemHeading>

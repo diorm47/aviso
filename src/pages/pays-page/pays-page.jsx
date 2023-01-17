@@ -1,13 +1,21 @@
 import React from "react";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import PaysChart from "../../components/charts/charts";
-import "./pays-page.css";
 import DataTable from "../../components/data-table/data-table";
+import "./pays-page.css";
 
 function PaysPage() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   React.useEffect(() => {
     document.title = `Список выплат за последние 24 часа`;
   }, []);
+
   const columns = [
     { key: "id", name: "Счет пользователя" },
     { key: "summ", name: "Сумма(руб.)" },
@@ -70,13 +78,15 @@ function PaysPage() {
   return (
     <div className="pays_page">
       <div className="pays_page_title">
-        <h2>Список выплат за последние 24 часа</h2>
+        <h2 data-aos="fade-up" data-aos-duration="1000">
+          Список выплат за последние 24 часа
+        </h2>
       </div>
-      <div className="charts_block">
+      <div className="charts_block" data-aos="fade-up" data-aos-duration="1000">
         <PaysChart />
         <p>Всего выплачено за 24 часа: 1484 руб. (Выплат: 397)</p>
       </div>
-      <div className="pays_table">
+      <div className="pays_table" data-aos="fade-up" data-aos-duration="1000">
         <DataTable columns={columns} rows={rows} />
       </div>
     </div>

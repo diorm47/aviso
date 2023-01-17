@@ -1,16 +1,28 @@
 import React from "react";
 import "./privacy-policy.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function PolicyPage() {
   React.useEffect(() => {
     document.title = `Политика конфиденциальности персональных данных`;
   }, []);
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <div className="privacy_page">
-      <div className="privacy_title">
+      <div className="privacy_title" data-aos="fade-up" data-aos-duration="1000">
         <h1>Политика конфиденциальности персональных данных</h1>
       </div>
-      <div className="privacy_content">
+      <div
+        className="privacy_content"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <h3>1. Определение терминов</h3>
         <p>
           <span>

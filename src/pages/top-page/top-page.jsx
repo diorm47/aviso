@@ -1,4 +1,6 @@
-import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React, { useEffect } from "react";
 import DataTable from "../../components/data-table/data-table";
 import "./top-page.css";
 
@@ -8,6 +10,11 @@ function TopPage() {
   React.useEffect(() => {
     document.title = `Топ пользователи`;
   }, []);
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   let top = [];
   const columns = [
     { key: "id", name: "N" },
@@ -50,10 +57,18 @@ function TopPage() {
   ];
   return (
     <div className="top_page">
-      <div className="top_page_title">
+      <div
+        className="top_page_title"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <h1>Топ пользователи</h1>
       </div>
-      <div className="top_page_text">
+      <div
+        className="top_page_text"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <p>
           На данной странице приведён список участников проекта '----', которые
           добились больших результатов. Вы, наверняка, спросите себя “а как же
@@ -68,7 +83,11 @@ function TopPage() {
           <p>Топ пользователей пока нет.</p>
         </div>
       ) : (
-        <div className="top_content">
+        <div
+          className="top_content"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <DataTable columns={columns} rows={rows} />
         </div>
       )}

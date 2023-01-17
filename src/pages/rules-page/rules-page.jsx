@@ -1,13 +1,26 @@
 import React from "react";
 import "./rules-page.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function RulesPage() {
   React.useEffect(() => {
     document.title = `Публичная оферта`;
   }, []);
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <div className="rules_page">
-      <div className="rules_page_title">
+      <div
+        className="rules_page_title"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <h1>Публичная оферта</h1>
         <p>
           Публичная оферта на оказание услуг сервисом «-----». ИП --- ----- ----
@@ -18,7 +31,11 @@ function RulesPage() {
         </p>
       </div>
 
-      <div className="rules_content">
+      <div
+        className="rules_content"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <h2>1. Термины и определения</h2>
         <p>
           1.1. «----» - сайт в сети «Интернет» (далее «Проект» или «Сайт»)

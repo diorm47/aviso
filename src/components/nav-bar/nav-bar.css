@@ -132,10 +132,6 @@ nav {
 .hide_mobile_menu .nav_list_item:hover p {
   color: rgb(183, 183, 183);
 }
-.active div p,
-.active div p {
-  color: rgb(183, 183, 183) !important;
-}
 
 .nav_mobilie_menu .nav_menu_item p,
 .hide_mobile_menu .nav_menu_item p {
@@ -173,5 +169,9 @@ nav {
   }
   .hide_close_menu {
     display: flex;
+  }
+  .active div p,
+  .active div p {
+    color: rgb(183, 183, 183) !important;
   }
 }
